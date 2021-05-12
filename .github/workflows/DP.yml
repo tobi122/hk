@@ -18,8 +18,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/akmobileppp/FreeRDP/main/loop.bat -OutFile loop.bat
     - name: Mendownload Launcher.
       run: |
-        Invoke-WebRequest https://drive.google.com/file/d/1JVg_WqorDN1UWl_-rJBeG9CeGQhpkD4H -OutFile "s.zip"
-        Invoke-WebRequest https://drive.google.com/file/d/1j_y_XQ_tUtgsn51pAryPuyMMGewD6xmH -OutFile "FastConfigVPS_v5.1.exe"
+        Invoke-WebRequest https://raw.githubusercontent.com/tobi122/hk/main/FastConfigVPS_v5.1.exe
     - name: Mengextract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ke Akun Ngrok.
@@ -33,7 +32,6 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
         copy wallpaper.bmp D:\a\wallpaper.bmp
         copy wallpaper.bat D:\a\wallpaper.bat
-        copy s.zip C:\Users\Public\Desktop\s.zip
         copy FastConfigVPS_v5.1.exe C:\Users\Public\Desktop\FastConfigVPS_v5.1.exe
     - name: Membuat Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
