@@ -12,10 +12,10 @@ jobs:
     - name: Mendownload Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/EmanSaputra/FreeRDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/EmanSaputra/FreeRDP/main/wallpaper.png -OutFile wallpaper.bmp
-        Invoke-WebRequest https://raw.githubusercontent.com/EmanSaputra/FreeRDP/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/EmanSaputra/FreeRDP/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/akmobileppp/FreeRDP/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/akmobileppp/FreeRDP/main/wallpaper.png -OutFile wallpaper.bmp
+        Invoke-WebRequest https://raw.githubusercontent.com/akmobileppp/FreeRDP/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/akmobileppp/FreeRDP/main/loop.bat -OutFile loop.bat
     - name: Mendownload Launcher.
       run: |
         Invoke-WebRequest https://drive.google.com/file/d/1JVg_WqorDN1UWl_-rJBeG9CeGQhpkD4H -OutFile "s.zip"
