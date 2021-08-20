@@ -16,8 +16,6 @@ echo IP:
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Failed to retreive NGROK authtoken - check again your authtoken"
 echo Username: administrator
 echo Password: Cuncun12
-curl -O https://github.com/tobi122/hk/blob/main/File/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://github.com/tobi122/hk/main/File/FastConfigVPS_v5.1.exe > out.txt 2>&1
 echo You can login now.
 ping -n 10 127.0.0.1 >nul
 
